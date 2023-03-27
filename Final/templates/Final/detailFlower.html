@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>April flower shop</title>
+    <script src="https://kit.fontawesome.com/e6f15c132f.js" crossorigin="anonymous"></script>
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+            background-color: #f7e4e4;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        h1 {
+            margin: 0;
+        }
+        
+        .product-container {
+            margin: 20px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        .product-image {
+            width: 50%;
+            text-align: center;
+        }
+        
+        .product-image img {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        .product-details {
+            width: 50%;
+            padding: 20px;
+            background-color: #f7f7f7;
+        }
+        
+        .product-details h2 {
+            margin-top: 0;
+        }
+        
+        .product-details p {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="/img/logo.png" alt="Flower Shop Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+            </ul>
+        </nav>
+        <div class="search-cart">
+            <div class="search">
+                <input type="text" placeholder="Search...">
+                <button>Search</button>
+            </div>
+            <div class="cart">
+                <a href="#"><i class="fas fa-shopping-cart"></i> Cart (0)</a>
+            </div>
+        </div>
+    </header>
+    <div class="product-container">
+        <div class="product-image">
+            <img src="/img/product1.jpg" alt="Flower Image">
+        </div>
+        <div class="product-details">
+            <h2 class="product-name">Rose</h2>
+            <p class="product-price">Price: $10.99</p>
+            <p class="product-description">Description: A beautiful and fragrant rose that is perfect for any occasion.</p>
+            <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+    </div>
+</body>
+
+</html>

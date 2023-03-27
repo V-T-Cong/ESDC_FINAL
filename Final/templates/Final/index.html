@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>April flower shop</title>
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
+    <script src="https://kit.fontawesome.com/e6f15c132f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="/static/img/logo.png" alt="Flower Shop Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+            </ul>
+        </nav>
+        <div class="search-cart">
+            <div class="search">
+                <input type="text" placeholder="Search...">
+                <button>Search</button>
+            </div>
+            <div class="cart">
+                <a href="#"><i class="fas fa-shopping-cart"></i> Cart (0)</a>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="container">
+        <aside>
+            <h2>Flower Categories</h2>
+            <ul>
+                <li><a href="#">Roses</a></li>
+                <li><a href="#">Lilies</a></li>
+                <li><a href="#">Tulips</a></li>
+                <li><a href="#">Orchids</a></li>
+            </ul>
+        </aside>
+        <main>
+            <h1>Our Products</h1>
+            <div class="products">
+                <div class="product">
+                    <a href="/template/detailFlower.html"><img src="/static/img/product1.jpg" alt="Product 1"></a>
+                    <button class="wishlist-btn" onclick="toggleWishlist(this)">
+                        <span class="fa fa-heart-o wishlist-icon"></span>
+                    </button>
+                    <h3>Product 1</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In bibendum metus at risus malesuada, quis ultrices eros tristique.</p>
+                    <span class="price">$20.99</span>
+                    <a href="#" class="buy-now">Buy Now</a>
+                </div>
+                <div class="product">
+                    <img src="/static/img/product2.jpg" alt="Product 2">
+                    <button class="wishlist-btn" onclick="toggleWishlist(this)">
+                        <span class="fa fa-heart-o wishlist-icon"></span>
+                    </button>
+                    <h3>Product 2</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In bibendum metus at risus malesuada, quis ultrices eros tristique.</p>
+                    <span class="price">$15.99</span>
+                    <a href="#" class="buy-now">Buy Now</a>
+                </div>
+                <div class="product">
+                    <img src="/static/img/product3.jpg" alt="Product 3">
+                    <button class="wishlist-btn" onclick="toggleWishlist(this)">
+                        <span class="fa fa-heart-o wishlist-icon"></span>
+                    </button>
+                    <h3>Product 3</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In bibendum metus at risus malesuada, quis ultrices eros tristique.</p>
+                    <span class="price">$18.99</span>
+                    <a href="#" class="buy-now">Buy Now</a>
+                </div>
+                <div class="product">
+                    <img src="/static/img/product4.jpg" alt="Product 4">
+                    <button class="wishlist-btn" onclick="toggleWishlist(this)">
+                        <span class="fa fa-heart-o wishlist-icon"></span>
+                    </button>
+                    <h3>Product 4</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In bibendum metus at risus malesuada, quis ultrices eros tristique.</p>
+                    <span class="price">$24.99</span>
+                    <a href="#" class="buy-now">Buy Now</a>
+                </div>
+                <div class="product">
+                    <img src="/static/img/product5.jpg" alt="Product 5">
+                    <button class="wishlist-btn" onclick="toggleWishlist(this)">
+                        <span class="fa fa-heart-o wishlist-icon"></span>
+                    </button>
+                    <h3>Product 5</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In bibendum metus at risus malesuada, quis ultrices eros tristique.</p>
+                    <span class="price">$12.99</span>
+                    <a href="#" class="buy-now">Buy Now</a>
+                </div>
+                <div class="product">
+                    <img src="/static/img/product6.jpg" alt="Product 6">
+                    <button class="wishlist-btn" onclick="toggleWishlist(this)">
+                        <span class="fa fa-heart-o wishlist-icon"></span>
+                    </button>
+                    <h3>Product 6</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In bibendum metus at risus malesuada, quis ultrices eros tristique.</p>
+                    <span class="price">$17.99</span>
+                    <a href="#" class="buy-now">Buy Now</a>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+
+</body>
+
+</html>
+
+<script>
+    function toggleWishlist(button) {
+        button.classList.toggle("active");
+        if (button.classList.contains("active")) {
+            button.querySelector(".wishlist-icon").classList.remove("fa-heart-o");
+            button.querySelector(".wishlist-icon").classList.add("fa-heart");
+        } else {
+            button.querySelector(".wishlist-icon").classList.remove("fa-heart");
+            button.querySelector(".wishlist-icon").classList.add("fa-heart-o");
+        }
+    }
+</script>
