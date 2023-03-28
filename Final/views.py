@@ -4,5 +4,5 @@ from django.shortcuts import render
 def home(request):
     return render(request,'Final/index.html')
 
-# def detail(req):
-#     return render(req, 'Final/detailFlower.html')
+def detail(request):
+    return render(request, 'Final/detailFlower.html')
